@@ -1,0 +1,228 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    background-color: hsl(0, 0%, 8%);
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*==Component Styles==*/
+main {
+    /*Center with this code*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /*Decorative*/
+    color: white;
+    width: 90%;
+}
+
+h1,
+h2,
+h3,
+p,
+span,
+a {
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+}
+
+.card {
+    max-width: 375px;
+    margin: 0 auto;
+    background-color: hsl(0, 0%, 12%);
+    padding: 1.25rem 1.25rem;
+}
+
+/*radius for the corner*/
+.card, .profile-link{
+    border-radius: .5rem;
+}
+
+/*profile details*/
+.profile-img{
+    text-align: center;
+}
+
+.profile-img img {
+    width: 6rem;
+    border-radius: 50%;
+}
+
+/*align text*/
+.profile-details, .profile-bio{
+    text-align: center;
+}
+
+.profile-details{
+    margin: 1.5rem 0;
+}
+
+.profile-details h1{
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+}
+
+.profile-details p{
+    font-weight: 600;
+    font-size: 14px;
+    color: hsl(75, 94%, 57%);
+}
+
+.profile-bio{
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    font-size: 14px;
+}
+
+
+.profile-link {
+    display: block;
+    background-color: hsl(0, 0%, 20%);
+    margin-bottom: 1rem;
+    padding: .90rem 0;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.profile-link:last-child{
+    margin-bottom: 0;
+}
+
+.profile-links a:hover{
+    color: hsl(75, 94%, 57%) ;
+}

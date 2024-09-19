@@ -1,0 +1,28 @@
+{{define "title"}}{{.Name}}{{end}}
+{{define "main"}}
+<div class="card">
+  <div class="profile-img"><img src={{.AvatarURL}} alt=""></div>
+  <div class="profile-details">
+    <h1 class="profile-name">{{.Name}}</h1>
+    <p class="profile-location">{{.Location}}</p>
+  </div>
+  <div class="profile-bio"><span>{{.Bio}}</span></div>
+  <div class="profile-links">
+    <a href={{.GithubURL}} target="_blank" class="profile-link">Github</a>
+    {{if .Blog}}
+      <a href={{.Blog}} target="_blank" class="profile-link">{{.Blog}}</a>
+    {{end}}
+    {{if gt (len .SocialAccounts) 0}}
+      {{range .SocialAccounts}}
+        <a href={{.url}} target="_blank" class="profile-link">
+          {{.provider}}
+        </a>
+      {{end}}
+    {{end}}
+  </div>
+</div>
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+  Coded by <a href="https://github.com/ezraorbit">ezraorbit</a>.
+</div>
+{{end}}
