@@ -52,5 +52,7 @@ This challenge was a refresher on learning how to use css and html.
 
 I'm planning updating the profile picture and name dynamically, using GO ofcourse.
 
+P.S. I finished adding it.
+
 ## Author
 - Frontend Mentor - [@ezraorbit](https://www.frontendmentor.io/profile/ezraorbit)
