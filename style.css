@@ -226,9 +226,3 @@ a {
 .profile-links a:focus, .profile-links a:hover{
     color: hsl(75, 94%, 57%) ;
 }
-
-/*Desktop design*/
-@media (min-width:1025px) {
-
-
-}
